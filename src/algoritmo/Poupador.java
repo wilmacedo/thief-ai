@@ -204,19 +204,6 @@ public class Poupador extends ProgramaPoupador {
         int pesoTotalDireita  = calculatedPositions.get(2)[1];
         int pesoTotalCima     = calculatedPositions.get(3)[1];
 
-//        if(sensor.getVisaoIdentificacao()[UP]==COIN){
-//            pesoTotalCima += 1000;
-//        }
-//        if(sensor.getVisaoIdentificacao()[DOWN]==COIN){
-//            pesoTotalBaixo += 1000;
-//        }
-//        if(sensor.getVisaoIdentificacao()[RIGHT]==COIN){
-//            pesoTotalDireita += 1000;
-//        }
-//        if(sensor.getVisaoIdentificacao()[LEFT]==COIN){
-//            pesoTotalEsquerda += 1000;
-//        }
-
         if(sensor.getVisaoIdentificacao()[UP]>=THIEF || sensor.getVisaoIdentificacao()[UP]>=POUPADOR){
             pesoTotalBaixo += 3000;
         }
